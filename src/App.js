@@ -9,9 +9,16 @@ class App extends React.Component {
 
   add = () => {
     console.log("add");
+    //Do not mutate state directly. Use setState()  react/no-direct-mutation-state
+    //this.state.count = 1;
+    this.setState(current => ({count: current.count + 1}));
+
   };
   minus = () => {
     console.log("minus");
+    //Do not mutate state directly. Use setState()  react/no-direct-mutation-state
+    //this.state.count = -1;
+    this.setState(current => ({count: current.count - 1}));
   };
   render() {
     return (
