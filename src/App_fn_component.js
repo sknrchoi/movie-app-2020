@@ -52,5 +52,5 @@ function App() {
     </div>
   );
 }
-
-export default App;
+// comment: do not export App because of teting class component
+//export default App;
