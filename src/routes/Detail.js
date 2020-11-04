@@ -17,7 +17,7 @@ class Detail extends React.Component {
                         <img src={location.state.poster} alt={location.state.title} title={location.state.title}></img>
                         <div>
                             <h2>{location.state.title} ( {location.state.year} )</h2>
-                            <ul>
+                            <ul className="detail__genres">
                                 {typeof location.state.genres !== 'undefined' ? (
                                     location.state.genres.map((genre, index) => (
                                         <li key={index} >{genre}</li>
