@@ -1,5 +1,6 @@
 import React from "react";
 import "./Detail.css";
+import { Link } from "react-router-dom";
 
 class Detail extends React.Component {
     componentDidMount() {
@@ -10,6 +11,7 @@ class Detail extends React.Component {
     }
     render() {
         const { location } = this.props;
+        console.log("sknrchoi log [location] : ", location);
         if(location.state) {
             return (
                 <section className="detail__container">
@@ -26,7 +28,12 @@ class Detail extends React.Component {
                                     )
                                 }
                             </ul> 
-                            <p>{location.state.summary}</p>                       
+                            <p>{location.state.summary}</p>      
+                            <Link to= {{
+                                    pathname: `/ticket/${location.state.id}`
+                                }}>
+                                <button>예매하기</button>
+                            </Link>               
                         </div>
                     </div>
                 </section>

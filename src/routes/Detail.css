@@ -26,3 +26,8 @@
     display: flex;
     margin: 5px 0px;
 }
+
+.detail__genres li{
+    margin-right: 10px;
+    font-size: 14px;
+}
