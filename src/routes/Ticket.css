@@ -1,0 +1,45 @@
+.ticket__container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ticket__container .step {
+    width: 60%;
+    margin: 0 auto;
+}
+.ticket__container .step > div {
+    display: inline-block;
+    float: left;
+    margin-left: 2px;
+}
+.ticket__container .step__movie {
+    width: 30%;
+}
+.ticket__container .step__date {
+    width: 65%;
+}
+.step .head {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #333333;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: whitesmoke;
+}
+.step .body {
+    background-color: #ffffff;
+}
+.step__movie li {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
